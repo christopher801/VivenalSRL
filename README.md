@@ -1,21 +1,16 @@
-# Site Web Professionnel - VIVENAL SRL
+# React + Vite
 
-## 📋 Description
-Site web moderne, professionnel et responsive pour la société **VIVENAL SRL - Vidrios, Ventanas y Aluminio**, spécialisée dans la fabrication et installation de verre, fenêtres et aluminium.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🎯 Objectif
-Créer une présence en ligne professionnelle qui reflète la qualité et l'expertise de VIVENAL SRL, avec un design industriel moderne et une expérience utilisateur optimale sur tous les appareils.
+Currently, two official plugins are available:
 
-## 🛠️ Technologies Utilisées
-- **HTML5** - Structure sémantique
-- **CSS3** - Styles et mise en page responsive
-- **JavaScript Vanilla** - Interactivité sans frameworks
-- **Google Fonts** - Typographie moderne (Roboto, Montserrat)
-- **Font Awesome** - Icônes professionnelles
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 🎨 Design & Couleurs
-- **Palette principale** : Rouge industriel, Noir, Gris, Blanc
-- **Style** : Industriel moderne, propre et professionnel
-- **Responsive** : Mobile-first, adapté à toutes les tailles d'écran
+## React Compiler
 
-## 📁 Structure du Projet
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
