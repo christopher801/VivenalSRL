@@ -28,8 +28,7 @@ function LoginForm() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-10">
           <img src="/vivenal-image-logo-removebg-preview.png" alt="Vivenal" className="h-14 mx-auto mb-4" onError={(e) => { e.target.style.display = "none"; }} />
-          <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.8rem" }} className="uppercase text-white tracking-wide">
-            Vivenal <span className="text-red-500">Admin</span>
+          <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.8rem" }} className="uppercase text-white tracking-wide"> <span className="text-red-500">Admin</span>
           </h1>
           <p className="text-gray-500 text-sm mt-1">Panel de mensajes</p>
         </div>
