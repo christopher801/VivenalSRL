@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { auth, db } from "../firebase";
 import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 import { collection, onSnapshot, doc, updateDoc, deleteDoc, query, orderBy } from "firebase/firestore";
@@ -51,7 +52,12 @@ function LoginForm() {
             </button>
           </form>
         </div>
-        <p className="text-center text-gray-600 text-xs mt-6">© {new Date().getFullYear()} Vivenal SRL</p>
+        <div className="text-center mt-6">
+          <Link to="/" className="text-gray-600 hover:text-gray-400 text-xs uppercase tracking-widest transition-colors">
+            ← Volver al sitio web
+          </Link>
+        </div>
+        <p className="text-center text-gray-600 text-xs mt-3">© {new Date().getFullYear()} Vivenal SRL</p>
       </div>
     </div>
   );
@@ -137,6 +143,12 @@ function Dashboard({ user }) {
           </div>
           <div className="flex items-center gap-4">
             <span className="text-gray-400 text-xs hidden sm:block">{user.email}</span>
+            <Link
+              to="/"
+              className="text-xs font-bold uppercase tracking-wider text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 px-3 py-1.5 transition-colors"
+            >
+              ← Sitio web
+            </Link>
             <button onClick={() => signOut(auth)} className="text-xs font-bold uppercase tracking-wider text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 px-3 py-1.5 transition-colors">
               Cerrar sesión
             </button>
