@@ -28,7 +28,8 @@ function LoginForm() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-10">
           <img src="/vivenal-image-logo-removebg-preview.png" alt="Vivenal" className="h-14 mx-auto mb-4" onError={(e) => { e.target.style.display = "none"; }} />
-          <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.8rem" }} className="uppercase text-white tracking-wide"> <span className="text-red-500">Admin</span>
+          <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.8rem" }} className="uppercase text-white tracking-wide">
+            Vivenal <span className="text-red-500">Admin</span>
           </h1>
           <p className="text-gray-500 text-sm mt-1">Panel de mensajes</p>
         </div>
@@ -136,9 +137,7 @@ function Dashboard({ user }) {
         <div className="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img src="/vivenal-image-logo-removebg-preview.png" alt="Vivenal" className="h-8 w-auto" onError={(e) => { e.target.style.display = "none"; }} />
-            <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800 }} className="text-white uppercase tracking-wide text-lg">
-              Vivenal <span className="text-red-500">Admin</span>
-            </span>
+             <span className="text-red-500">Admin</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-gray-400 text-xs hidden sm:block">{user.email}</span>
