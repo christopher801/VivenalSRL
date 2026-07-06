@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -20,7 +22,7 @@ export default function Footer() {
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Líderes en vidrios, ventanas y estructuras de aluminio en la
-              República Dominicana desde 2016.
+              República Dominicana.
             </p>
           </div>
 
@@ -34,13 +36,12 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2">
               {["Inicio", "Servicios", "Proyectos", "Nosotros", "Contacto"].map((item) => (
-                <li key={item}>
-                  <a
+                <li key={item}
+                  
                     href={`#${item.toLowerCase()}`}
                     className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
                   >
                     {item}
-                  </a>
                 </li>
               ))}
             </ul>
@@ -55,14 +56,18 @@ export default function Footer() {
               Legal
             </h4>
             <ul className="flex flex-col gap-2">
-              {["Términos y Condiciones", "Política de Privacidad", "Aviso Legal"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
+              {[
+                { label: "Términos y Condiciones", to: "/terminos" },
+                { label: "Política de Privacidad", to: "/privacidad" },
+                { label: "Aviso Legal", to: "/aviso-legal" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link
+                    to={item.to}
                     className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -78,7 +83,11 @@ export default function Footer() {
           </p>
           <p className="text-gray-600 text-xs">
             Creado por{" "}
-            <span className="text-red-500 font-semibold"><a href="https://github.com/christopher801">Christopher</a></span>
+            <span className="text-red-500 font-semibold">
+              <a href="https://wa.me/18494850059?text=Hola%2C%20me%20interesa%20el%20sitio%20web%20de%20Vivenal%20SRL">
+                Christopher
+              </a>
+            </span>
           </p>
         </div>
       </div>

@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { db } from "../firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 const info = [
-  { icon: "📍", label: "Dirección", value: "Calle Moca #218, Villas Agrícolas, Santo Domingo", link: null },
+  { icon: "📍", label: "Dirección", value: "Calle Ernesto Gómez #14, Villa juana, Santo Domingo 10411", link: "https://maps.app.goo.gl/17VjCjPdRqAMRzYM8?g_st=awb" },
   { icon: "📞", label: "Teléfono / WhatsApp", value: "+1 (849) 883-3125", link: "tel:+18498833125" },
   { icon: "✉️", label: "Email", value: "vivenalsrl@gmail.com", link: "mailto:vivenalsrl@gmail.com" },
 ];
-
+// C. Ernesto Gómez 14, Santo Domingo 10411
 const socials = [
-  { icon: "F", label: "Facebook", href: "https://www.facebook.com/profile.php?id=100070009849810", color: "#1877f2" },
-  { icon: "IG", label: "Instagram", href: "https://www.instagram.com/vivenalsrl", color: "#e1306c" },
-  { icon: "WA", label: "WhatsApp", href: "https://wa.me/18498833125", color: "#25d366" },
+  { icon: <FaFacebook /> , label: "Facebook", href: "https://www.facebook.com/profile.php?id=100070009849810", color: "#1877f2" },
+  { icon: <FaInstagram /> , label: "Instagram", href: "https://www.instagram.com/vivenalsrl", color: "#e1306c" },
+  { icon: <FaWhatsapp />, label: "WhatsApp", href: "https://wa.me/18498833125", color: "#25d366" },
 ];
 
 export default function Contact() {

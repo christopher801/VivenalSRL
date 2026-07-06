@@ -1,6 +1,13 @@
 {
   "name": "Vivenal SRL",
   "short_name": "Vivenal",
+  "description": "Fabricación e instalación de puertas, ventanas, vidrios y aluminio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C62828",
+  "orientation": "portrait-primary",
+
   "icons": [
     {
       "src": "/favicon-192x192.png",
@@ -12,8 +19,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#c62828",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }

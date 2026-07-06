@@ -137,7 +137,6 @@ function Dashboard({ user }) {
         <div className="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img src="/vivenal-image-logo-removebg-preview.png" alt="Vivenal" className="h-8 w-auto" onError={(e) => { e.target.style.display = "none"; }} />
-             <span className="text-red-500">Admin</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-gray-400 text-xs hidden sm:block">{user.email}</span>
