@@ -46,7 +46,7 @@ export default function Hero() {
         </h1>
 
         <p className="anim-up d2 mt-6 mb-10 text-lg text-white/80 max-w-2xl mx-auto leading-relaxed font-light">
-          Más de 8 años de experiencia en la fabricación e instalación de vidrios,
+          Más de 15 años de experiencia en la fabricación e instalación de vidrios,
           ventanas y estructuras de aluminio para hogares y negocios en toda la
           República Dominicana.
         </p>
@@ -69,7 +69,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="anim-up d4 mt-16 grid grid-cols-3 gap-6 max-w-lg mx-auto">
           {[
-            { n: "8+", label: "Años de experiencia" },
+            { n: "15+", label: "Años de experiencia" },
             { n: "500+", label: "Proyectos realizados" },
             { n: "100%", label: "Satisfacción garantizada" },
           ].map((s) => (

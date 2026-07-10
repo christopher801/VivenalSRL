@@ -12,7 +12,7 @@ const values = [
   {
     icon: "⭐",
     title: "Experiencia",
-    desc: "8 años de conocimiento y especialización respaldan cada trabajo que realizamos.",
+    desc: "15 años de conocimiento y especialización respaldan cada trabajo que realizamos.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function About() {
                     <div
                       style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "3rem", fontWeight: 800, lineHeight: 1 }}
                     >
-                      8+
+                      15+
                     </div>
                     <div className="text-xs uppercase tracking-widest font-bold mt-1">
                       Años de experiencia
